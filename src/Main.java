@@ -1,21 +1,21 @@
 public class Main {
     public static void main(String[] args) {
         // Задача 1
-        int age = 19;
+        int age = 18;
 
         if (age >= 18) {
-            System.out.println("Вы совершеннолетний");
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
         } else {
-            System.out.println("Вы еще не совершеннолетний, нужно немного подождать");
+            System.out.println("Если возраст человека равен " + age + ", он не достиг совершеннолетия, нужно немного подождать");
         }
 
         // Задача 2
         int temperature = 7;
 
         if (temperature >= 5) {
-            System.out.println("На улице " + temperature + " градусов. Можно идти без шапки");
+            System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         } else {
-            System.out.println("На улице " + temperature + " градусов. Нужно надеть шапку");
+            System.out.println("На улице " + temperature + " градусов, нужно надеть шапку");
         }
 
         // Задача 3
@@ -67,18 +67,18 @@ public class Main {
         }
 
         // Задача 7
-        int one = 100;
-        int two = 567;
-        int three = 15;
+        int one = 1200;
+        int two = 11030;
+        int three = 100;
 
         if (one > two && one > three) {
             System.out.println("Наибольшее число " + one);
         } else if (two > one && two > three) {
             System.out.println("Наибольшее число " + two);
-        } else {
+        } else if (three > one && three > two) {
             System.out.println("Наибольшее число " + three);
+        } else {
+            System.out.println("Числа равны");
         }
-
-
     }
 }
